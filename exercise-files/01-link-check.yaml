@@ -4,12 +4,14 @@ on:
 jobs:
   build: 
     runs-on: ubuntu-latest
-    name: Use Node.js 
-    uses: actions/setup-node@v4
-    with:
-      node-version: 20
+    steps:
+      - name: Use Node.js 
+      - uses: actions/setup-node@v4
+      with:
+        node-version: 20
 
   link-check:
-    run: npx broken-link-checker https://learn.madetech.com --exclude microsoft --exclude linkedin --exclude twitter --exclude codewars.com -ro
+    steps:
+      - run: npx broken-link-checker https://learn.madetech.com --exclude microsoft --exclude linkedin --exclude twitter --exclude codewars.com -ro
 
     
