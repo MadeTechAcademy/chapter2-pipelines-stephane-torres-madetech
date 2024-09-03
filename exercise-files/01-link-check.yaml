@@ -10,5 +10,6 @@ jobs:
       node-version: 20
 
   link-check:
+    run: npx broken-link-checker https://learn.madetech.com --exclude microsoft --exclude linkedin --exclude twitter --exclude codewars.com -ro
 
     
