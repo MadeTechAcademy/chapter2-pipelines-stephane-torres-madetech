@@ -16,5 +16,5 @@ jobs:
       with:
         node-version: 20
     - run: npm install npm@5
-    - run: npm run prettify
+    # - run: npm run prettify
     - run: npm test
