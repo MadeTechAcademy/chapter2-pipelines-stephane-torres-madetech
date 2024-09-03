@@ -1,6 +1,7 @@
-name: Run Link Check
+name: Run Link Check Cron
 on: 
-  workflow_dispatch:
+  schedule:
+    - cron: '50 11 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
