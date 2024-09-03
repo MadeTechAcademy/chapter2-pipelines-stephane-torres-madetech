@@ -2,8 +2,7 @@ name: Run Link Check
 on: 
   workflow_dispatch:
 jobs:
-  build:
-
+  link-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -11,11 +10,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
          node-version: 20
-     
-
-  link-check:
-    runs-on: ubuntu-latest
-    steps:
+  
       - run: npx broken-link-checker https://learn.madetech.com --exclude microsoft --exclude linkedin --exclude twitter --exclude codewars.com -ro
-
     
