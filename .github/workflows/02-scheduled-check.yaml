@@ -1,7 +1,7 @@
 name: Run Link Check Cron
 on: 
   schedule:
-    - cron: '45 13 * * *'
+    - cron: '10/10 * * * *'
 jobs:
   link-check:
     runs-on: ubuntu-latest
