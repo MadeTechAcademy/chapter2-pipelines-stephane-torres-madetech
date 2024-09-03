@@ -1,5 +1,13 @@
 name: Run Link Check
 on: workflow_dispatch
 jobs:
-  link-check:
+  build: 
     runs-on: ubuntu-latest
+    name: Use Node.js 
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
+
+  link-check:
+    
+    
