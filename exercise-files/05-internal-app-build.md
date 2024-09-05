@@ -14,6 +14,11 @@ We would like the pipeline to run on each push to `main`
 - Move the config file into `.github/workflows` folder and commit & push your code.
 - Use the github web interface to find the pipeline and check the logs.
 - What went wrong?
+    Got a 404, with npm install npm@latest, 
+    npm error 404 Not Found - GET https://npm.pkg.github.com/npm
+    npm error 404
+    npm error 404  'npm@latest' is not in this registry.
+    I was expecting a 401? is it? unauthorised
 - Create a **short-lived** [CLASSIC Personal Access Token](https://github.com/settings/tokens/new?scopes=read:packages) in github with read:packages permissions and copy the value
 - Update the token in the `.npmrc` file with this value.
 - Commit & push your changes
