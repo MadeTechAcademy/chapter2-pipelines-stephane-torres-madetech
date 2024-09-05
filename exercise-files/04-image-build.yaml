@@ -1,0 +1,17 @@
+name: Build Docker Image
+on: 
+  workflow_dispatch:
+
+jobs: 
+  Build Image:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: docker-app
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t node-app-image -f Dockerfile . 
+      - run:  
+
