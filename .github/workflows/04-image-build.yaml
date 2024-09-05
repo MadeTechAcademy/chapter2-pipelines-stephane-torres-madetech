@@ -13,5 +13,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t node-app-image -f Dockerfile . 
-      - run: echo docker history node-app-image   
+      - run: docker history node-app-image   
 
