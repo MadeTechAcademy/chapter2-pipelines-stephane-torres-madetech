@@ -19,6 +19,8 @@ We would like the pipeline to run on each push to `main`
     npm error 404
     npm error 404  'npm@latest' is not in this registry.
     I was expecting a 401? is it? unauthorised
+
+    After a view modification, I got the expected 401 error code
 - Create a **short-lived** [CLASSIC Personal Access Token](https://github.com/settings/tokens/new?scopes=read:packages) in github with read:packages permissions and copy the value
 - Update the token in the `.npmrc` file with this value.
 - Commit & push your changes
