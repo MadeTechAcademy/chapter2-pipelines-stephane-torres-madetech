@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs: 
-  Build Image:
+  build:
     runs-on: ubuntu-latest
 
     defaults:
