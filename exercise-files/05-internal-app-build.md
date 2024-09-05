@@ -22,7 +22,7 @@ We would like the pipeline to run on each push to `main`
 - Invalidate your github PAT
 
 ## Questions (write your answers in the notes section):
-- Which part of this is pipeline is insecure and why?
+- Which part of this pipeline is insecure and why?
 - What else could go wrong?
 
 ## Hints
