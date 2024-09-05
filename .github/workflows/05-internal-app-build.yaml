@@ -14,9 +14,8 @@ jobs:
         working-directory: internal-app
 
     steps:
-    - name: Copy Files
-    - uses: actions/checkout@v4
-
+    - name: Copy files
+      uses: actions/checkout@v4
     - name: Use Node.js 
       uses: actions/setup-node@v4
       with:
