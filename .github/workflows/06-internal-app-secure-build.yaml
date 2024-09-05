@@ -17,12 +17,13 @@ jobs:
     steps:
     - name: Copy files
       uses: actions/checkout@v4
-      with: 
-        TOKEN: ${{secrets.TOKEN}}
+      
     - name: Use Node.js 
       uses: actions/setup-node@v4
       with:
         node-version: 20.x
     # - run: npm install npm@latest
     - run: npm install
+      with: 
+        TOKEN: ${{secrets.TOKEN}}
     - run: npm test
