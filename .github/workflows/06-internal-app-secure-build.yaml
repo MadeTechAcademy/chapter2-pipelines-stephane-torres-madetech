@@ -17,6 +17,8 @@ jobs:
     steps:
     - name: Copy files
       uses: actions/checkout@v4
+      with: 
+        TOKEN: ${{secrets.TOKEN}}
     - name: Use Node.js 
       uses: actions/setup-node@v4
       with:

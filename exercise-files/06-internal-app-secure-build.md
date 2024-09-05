@@ -16,7 +16,9 @@ We would like the pipeline to run on each push to `main` and also to be triggere
 - Move the config file into `.github/workflows` folder and commit & push your code.
 - Use the github web interface to find the pipeline and check the logs
 - What went wrong?
+    Get our 401
 - Add your PAT value to a github secret for your repository
+    
 - Tigger a manual build of the pipeline and check it now succeeds
 - Disable the pipeline
 - Invalidate your github PAT
