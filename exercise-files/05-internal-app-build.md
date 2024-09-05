@@ -20,7 +20,7 @@ We would like the pipeline to run on each push to `main`
     npm error 404  'npm@latest' is not in this registry.
     I was expecting a 401? is it? unauthorised
 
-    After a view modification, I got the expected 401 error code
+    After a few modifications, I got the expected 401 error code
     Added token and pushed but still got a 401 saying token no provided... token is being deleted by github, github tries to look after you.
 - Create a **short-lived** [CLASSIC Personal Access Token](https://github.com/settings/tokens/new?scopes=read:packages) in github with read:packages permissions and copy the value
 - Update the token in the `.npmrc` file with this value.
@@ -32,6 +32,7 @@ We would like the pipeline to run on each push to `main`
 
 ## Questions (write your answers in the notes section):
 - Which part of this pipeline is insecure and why?
+    action/checkout copying the files to the runner, the PAT token in being copied into the runner
 - What else could go wrong?
 
 ## Hints
