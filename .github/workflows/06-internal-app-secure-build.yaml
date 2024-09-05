@@ -23,7 +23,8 @@ jobs:
       with:
         node-version: 20.x
     # - run: npm install npm@latest
-    - run: npm install
-      with: 
-        TOKEN: ${{secrets.TOKEN}}
+    env:
+      TOKEN: ${{secrets.TOKEN}}
+    - run: npm install "$TOKEN"
+      
     - run: npm test
