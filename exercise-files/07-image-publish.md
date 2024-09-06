@@ -33,3 +33,6 @@ We're authenticating in a different way here, still don't quite get it but githu
 
 Those within our organisation are able to use the image/package that's been published to the github image repository.
 
+
+Tried pulling the image that is created as a github package... get an unauthorised error from docker daemon.... 
+
