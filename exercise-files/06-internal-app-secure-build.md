@@ -39,7 +39,7 @@ Using environment variables in github workflows: [Github docs](https://docs.gith
 - Check the docker deep dive course for an example of environment variable references in the `.npmrc` file
 
 ## Notes
-    GitHub lets us create and store secrets, on a repo level or even a enviroment level, not too sure how to implement the latter yet.
-    We can pass these securely into our pipelines. 
-    Can stick env: block in a couple of places with in the step scope so only that step is able to use it, or globally if being used in multiple places.
+GitHub lets us create and store secrets, on a repo level or even a enviroment level, not too sure how to implement the latter yet.
+We can pass these securely into our pipelines. 
+Can stick env: block in a couple of places with in the step scope so only that step is able to use it, or globally if being used in multiple places.
 
