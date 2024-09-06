@@ -19,3 +19,9 @@ We would like the pipeline to run on each push to `main`
 
 ## Notes
 
+Each new steps works in a new terminal and so won't keep track of pathing/context for example, one way around this it define a default working directory in a defaults: block to define where we want to run our commands, or to specify within each step wehere we are wanting to run our command.
+
+Github can be quite helpful with it's error messages to help us figure out why our pipeline might be failing
+
+Plugins are our friends! we can specify what environments/dependencies we need to use, like Node for example.
+

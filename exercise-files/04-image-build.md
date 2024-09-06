@@ -16,3 +16,5 @@ We need a pipeline that runs a docker command to build and tag the image. To con
 
 ## Notes
 
+Found this exercise helpful as a reminder that we are working with computers/machines and when we state that we would like to run on a ubuntu machine that's what we're doing! so we have access to whatever ubuntu has out of the box. In this case, docker, which we need to build and run our images and containers.
+

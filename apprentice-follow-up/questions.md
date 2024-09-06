@@ -6,6 +6,7 @@ Commit your answers to these questions in your copy
 Answer these after a day or two after the course 
 
 1. Which exercise did you find the easiest? and why
+    
 1. Which was most difficult? and why
 
 ## Part 2

@@ -42,3 +42,4 @@ We would like the pipeline to run on each push to `main`
 
 ## Notes
 
+Github looks after loads! first lets us know if we are trying to push secrets, i.e PAT (tokens) and then if we're using a Github PAT it goes a head and deletes it for us even if we did want to use it
