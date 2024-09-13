@@ -16,13 +16,16 @@ We would like the pipeline to run on each push to `main` and also to be triggere
 - Move the config file into `.github/workflows` folder and commit & push your code.
 - Use the github web interface to find the pipeline and check the logs
 - What went wrong?
+    Get our 401
 - Add your PAT value to a github secret for your repository
+
 - Tigger a manual build of the pipeline and check it now succeeds
 - Disable the pipeline
 - Invalidate your github PAT
 
 ## Questions (write your answers in the notes section):
 - Which part of this is pipeline is still not ideal and why?
+    Still using a Personal Access Token, if the owner of this deletes it, moves on, or no longer provides access to it, the pipeline blows up
 
 ## References
 Github secrets: [Set for a repository](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository)
@@ -36,4 +39,7 @@ Using environment variables in github workflows: [Github docs](https://docs.gith
 - Check the docker deep dive course for an example of environment variable references in the `.npmrc` file
 
 ## Notes
+GitHub lets us create and store secrets, on a repo level or even a enviroment level, not too sure how to implement the latter yet.
+We can pass these securely into our pipelines. 
+Can stick env: block in a couple of places with in the step scope so only that step is able to use it, or globally if being used in multiple places.
 

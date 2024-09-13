@@ -24,5 +24,8 @@ Scheduled workflows: [Github docs](https://docs.github.com/en/actions/writing-wo
 Check your cron syntax: https://crontab.guru/ 
 
 ## Notes
+Different types of triggers, can also be paired together, so we can run the same workflow from the same file with different triggers defined in the on: block.
+
+There are tools out there like crontab to help us with our cron statement. 
 
 

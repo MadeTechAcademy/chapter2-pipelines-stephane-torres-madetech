@@ -14,15 +14,25 @@ We would like the pipeline to run on each push to `main`
 - Move the config file into `.github/workflows` folder and commit & push your code.
 - Use the github web interface to find the pipeline and check the logs.
 - What went wrong?
+    Got a 404, with npm install npm@latest, 
+    npm error 404 Not Found - GET https://npm.pkg.github.com/npm
+    npm error 404
+    npm error 404  'npm@latest' is not in this registry.
+    I was expecting a 401? is it? unauthorised
+
+    After a few modifications, I got the expected 401 error code
+    Added token and pushed but still got a 401 saying token no provided... token is being deleted by github, github tries to look after you.
 - Create a **short-lived** [CLASSIC Personal Access Token](https://github.com/settings/tokens/new?scopes=read:packages) in github with read:packages permissions and copy the value
 - Update the token in the `.npmrc` file with this value.
 - Commit & push your changes
 - Use the github web interface to find the pipeline and check the pipeline now succeeds
+    It doesn't, see above.
 - Disable the pipeline.
 - Invalidate your github PAT
 
 ## Questions (write your answers in the notes section):
-- Which part of this is pipeline is insecure and why?
+- Which part of this pipeline is insecure and why?
+    action/checkout copying the files to the runner, the PAT token in being copied into the runner
 - What else could go wrong?
 
 ## Hints
@@ -32,3 +42,4 @@ We would like the pipeline to run on each push to `main`
 
 ## Notes
 
+Github looks after loads! first lets us know if we are trying to push secrets, i.e PAT (tokens) and then if we're using a Github PAT it goes a head and deletes it for us even if we did want to use it
